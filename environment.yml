@@ -1,0 +1,20 @@
+name: flavri-mcp
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11
+  - pip
+  - rdkit
+  - pandas
+  - numpy
+  - scipy
+  - tqdm
+  - rich
+  - pytest
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu121
+      - torch==2.5.1+cu121
+      - torchvision==0.20.1+cu121
+      - fastmcp>=0.1.0
+      - pydantic>=2.0
